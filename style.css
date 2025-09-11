@@ -1,14 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap');
 
 :root {
     --cor01:#1B1C2A;
     --cor02:#A8120E;
     --cor03:#000000;
     --cor04:#1720AA;
+    --fonte01:"Bebas Neue", sans-serif;
 }
 
 body {
     background-color: #000000;
     color: white;
+    
 }
