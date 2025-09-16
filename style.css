@@ -1,17 +1,118 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap');
+/* Importando fontes românticas */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&display=swap');
 
-:root {
-    --cor01:#1B1C2A;
-    --cor02:#A8120E;
-    --cor03:#000000;
-    --cor04:#1720AA;
-    --fonte01:"Bebas Neue", sans-serif;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #000000;
-    color: white;
-    
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(135deg, #000000, #1d3557, #e63946);
+    background-size: 300% 300%;
+    animation: bg-animation 12s ease infinite;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animação de fundo suave */
+@keyframes bg-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Cabeçalho */
+header.cabeçalho {
+    padding: 40px 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(230,57,70,0.6);
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 64px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 28px;
+    color: #fff;
+}
+
+/* Seções normais */
+section.normal {
+    background: rgba(29,53,87,0.85);
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 800px;
+    font-size: 22px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Seções com imagem (efeito destaque) */
+/* Configuração base para seções com imagem */
+section.imagem {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 30px auto;
+    padding: 60px 30px;
+    border-radius: 20px;
+    max-width: 850px;
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 1px 1px 4px #000;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* Imagem de fundo para cada seção */
+#img01 {
+    background-image: url(imagem/img1.jpeg); /* Troque pelo caminho da primeira foto */
+}
+
+#img02 {
+    background-image: url(imagem/img2.jpeg);
+}
+
+#img03 {
+    background-image: url(imagem/img5.jpeg);
+}
+
+#img04 {
+    background-image: url(imagem/img5.jpeg);
+}
+
+
+/* Títulos principais */
+section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffd6d9;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* Parágrafos */
+section p {
+    margin-bottom: 15px;
+}
+
+/* Footer (Spotify player) */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(230,57,70,0.5);
 }
