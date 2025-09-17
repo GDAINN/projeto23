@@ -21,7 +21,7 @@ body {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
-    background: linear-gradient(135deg, #e63946, #1d3557, #000);
+    background: linear-gradient(135deg,#1d3557,#000,#e63946);
     border: none;
     border-radius: 30px;
     cursor: pointer;
