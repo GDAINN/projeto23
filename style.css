@@ -15,12 +15,32 @@ body {
     text-align: center;
     line-height: 1.8;
 }
+#playButton {
+    display: none; /* só aparece se autoplay falhar */
+    padding: 15px 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background: linear-gradient(135deg, #e63946, #1d3557, #000);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#playButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(230,57,70,0.8);
+}
+
 
 /* Cabeçalho */
 header.cabeçalho {
     background: linear-gradient(135deg, #1d3557, #000000, #e63946);
     padding: 200px 20px;
-    border-bottom: 5px solid #e63946;
+    border-bottom: linear solid #e63946;
+    margin-bottom: 30px;
 }
 
 header h1 {
@@ -28,7 +48,8 @@ header h1 {
     font-size: 70px;
     color: #e63946;
     text-shadow: 2px 2px 8px #000;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 18px;
 }
 
 header h2 {
@@ -41,7 +62,7 @@ header h2 {
 section.normal {
     background-color: #00000062;
     color: #fff;
-    padding: 60px 20px;
+    padding: 80px 20px;
     max-width: 900px;
     margin: auto;
     font-size: 22px;
@@ -49,6 +70,28 @@ section.normal {
     border-radius: 30px;
     margin-bottom: 80px;
 }
+ul {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 40px;
+    list-style: none; /* remove os símbolos padrão */
+}
+
+ul li {
+    font-size: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 35px; /* espaço pro coração */
+}
+
+ul li::before {
+    content: "❤"; /* coração */
+    position: absolute;
+    left: 0;
+    color: #e63946; /* vermelho */
+    font-size: 22px;
+}
+
 
 /* Seções com imagem (Parallax) */
 section.imagem {
@@ -74,15 +117,18 @@ section.imagem {
 section h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 56px;
-    color: #ffd6d9;
+    color: #d89096;
     margin-bottom: 20px;
     text-shadow: 2px 2px 8px #000;
 }
 
 /* Rodapé */
-footer {
-    background: #000;
-    padding: 40px;
-    margin-top: 60px;
-    box-shadow: 0 -5px 15px rgba(0,0,0,0.8);
+footer > p{
+    font-family: 'Times New Roman', Times, serif;
+    background: #000000;
+    padding: 10px;
+    margin-top: 10px;
+    text-shadow: 1px 5px 2px #580808;
+    box-shadow: 2px 5px 12px rgb(255, 255, 255);
+    border-radius: 5px;
 }

@@ -7,11 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <audio id="musica" loop>
+  <source src="audio/ModestiaParte - Te Encontrar (Clipe Oficial).mp3" type="audio/mpeg">
+</audio>
+
+<button id="playButton">🎶 Espero que goste </button>
+
+<script>
+  const audio = document.getElementById("musica");
+  const playButton = document.getElementById("playButton");
+
+  // Tenta tocar automaticamente
+  window.addEventListener("load", () => {
+    audio.play().catch(() => {
+      // Se o autoplay for bloqueado, mostra o botão
+      playButton.style.display = "inline-block";
+    });
+  });
+
+  // Quando clicar no botão, toca a música
+  playButton.addEventListener("click", () => {
+    audio.play();
+    playButton.style.display = "none"; // botão some depois de clicar
+  });
+</script>
+
     <header class="cabeçalho">
         <h1>Oii</h1>
         <h2>Tudo bem?</h2>
-        <h2>Achou que eu ia esquecer essa data tão importante</h2>
+        <h2>Achou que eu ia esquecer essa data tão importante? <br>
+         Antes de descer, clique nesse botão lá em cima!</h2>
         
     </header>
     <section class="imagem" id="img01">
@@ -27,7 +52,7 @@
      <section class="imagem" id="img02">
         <h2>PORQUE???</h2>
         <p>Você chegou tão inesperadamente, que eu ainda estou impressionado como tudo está acontecendo. Sei que nos conhecemos de uma maneira diferente, porém as coisas andaram tão bem, então pouco tempo.</p>
-     </section class= "imagem" id="img05">
+     </section>
      <ul>
         <li>Então pouco tempo estou perdido no seu olhar</li>
         <li>Então pouco tempo eu já sinto tanto conforto em você</li>
@@ -37,7 +62,7 @@
      </ul>
      <section class="normal">
         <h2>AGORA?</h2>
-        <p>Eu não sinto que esteja só apaixonado por você, sinto que eu amo cada parte de você dos seus olhos ao seu pé, não sentia esse sentimento faz muito tempo, nunca pensei que iria sentir angustia e tristeza de se despedir de alguém que me transformou em tanto pouco tempo!</p>
+        <p>Eu não sinto que esteja apaixonado por você, sinto que eu amo cada parte de você dos seus olhos ao seu pé, não sentia esse sentimento faz muito tempo, nunca pensei que iria sentir angustia e tristeza de se despedir de alguém que me transformou em tanto pouco tempo!</p>
      </section> 
       <section class="imagem" id="img04">
          <h2>EU TE AMO!</h2>
@@ -46,18 +71,12 @@
       <section class="normal">
          Eu te amo por tudo que você é, e por tudo que você representa na minha vida.</p>
          <p>Feliz aniversário meu amor, que esse dia seja tão especial quanto você é para mim.</p>
-         <p>Com todo o meu amor</p>
+         <p>Com todo o meu amor ❤</p>
        </section>
-         <footer><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6Cn6WsGGoURke4Q5zXwipC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <audio id="musica" autoplay loop>
-  <source src="musica.mp3" type="audio/mpeg">
-  Seu navegador não suporta áudio.
+         <footer>
+          <p>
+            ASS: DIOGO COUTINHO SOARES
+          </p>
          </footer>
-        
-<audio id="musica" autoplay loop>
-  <source src="musica.mp3" type="audio/mpeg">
-  Seu navegador não suporta áudio.
-</audio>
-
 </body>
 </html>
